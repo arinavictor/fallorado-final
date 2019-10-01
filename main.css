@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ############################################ */
+
+
+
+img {
+    width: 200px;
+    height: 200px;
+    /* padding: 5px; */
+    margin-top: 8px;
+}
+
+body {
+    background: url("https://images.unsplash.com/photo-1476458393436-fb857cc4c7b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+header {
+    background-color: rgba(0,0,0, .3);
+    display: flex;
+    justify-content: center;
+    height: 260px;
+    border-bottom: double; 
+    border-top: double;
+    border-color: rgb(129, 126, 126);
+    border-width: 5px;
+
+}
+
+.header-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 18px;
+    font-size: 25px;
+
+}
+
+.nav-bar > li {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.hide-things {
+    display: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.card > a {
+    font-size: 30px;
+    
+}
+
+.card > p{
+    margin-top: 15px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: gray;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.card {
+    border: 2px solid grey;
+    background-color: rgba(41, 37, 36, 0.7);
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 3px 3px rgba(116, 113, 113, 0.5);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
+}
+
+.card:hover {
+    background-color: rgba(104, 100, 98, 0.7)
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75px;
+    bottom: 0;
+    background-color: rgba(0,0,0, .3);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+
+
+.add-event {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 30px;
+    box-shadow: 3px 3px rgba(116, 113, 113, 0.5);
+    background-color: rgba(255, 255, 255, .1); 
+
+}
+
+.add-event h2 {
+    font-size: 25px;
+    align-items: center;
+    /* padding-left: 178px; */
+    margin-top: 8px;
+}
+
+.add-event input {
+    margin-top: 8px;
+    margin-bottom: 5px;
+
+}
+
+.add-event select {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 15px;
+}
+
+.submit {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 100px;
+    width: 150px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+}

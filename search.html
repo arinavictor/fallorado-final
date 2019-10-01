@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+    <link rel="stylesheet" href='main.css'>
+</head>
+<body>
+    <header>
+        <section class='header-items'>
+            <img src="FALL-o-rado.png" >
+            <div class='nav'>
+                <ul class='nav-bar'>
+                    <li><a id='event-link' href="index.html"> EVENTS </a></li>
+                    <li><a id='map-link' href="#"> MAP</a></li>
+                    <li><a id='search-link' href="search.html"> SEARCH </a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <div class='form-container'>
+
+        <form class='add-event' action='http://localhost:9000/events' method='POST'>
+            <h2>ADD AN EVENT!</h2>
+            <label for='name'>Name</label>
+            <input type='text' name='name' id='name' />
+            <label for='location'>Address</label>
+            <input type='text' name='location' id='location' />
+            <label for='description'>Description</label>
+            <input type='text' name='description' id='description' />
+            <label for='url'>URL</label>
+            <input type='text' name='url' id='url' />
+            
+            <select name='category_id' id='category_dropdown'>
+                
+            </select>
+    
+            <input type='submit' class='submit' value='EVENT!'/>
+        </form>
+        <div class='event-container'>
+
+            <ul class='search-buttons' id='search-buttons'>
+                
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class='footer'>Copyright Fall-O-Rado &copy</footer>
+    <script src='search.js'></script>
+
+</body>
+</html>
