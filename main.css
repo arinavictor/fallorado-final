@@ -57,13 +57,15 @@ img {
 body {
     background: url("https://images.unsplash.com/photo-1476458393436-fb857cc4c7b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center fixed;
     background-size: cover;
+    position: relative;
     width: 100%;
     height: auto;
     color: white;
+    min-height: 100%;
 }
 
 header {
-    background-color: rgba(0,0,0, .3);
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     height: 260px;
@@ -132,7 +134,7 @@ a:hover {
 
 .card {
     border: 2px solid grey;
-    background-color: rgba(41, 37, 36, 0.7);
+    background-color: rgba(201,184,174, .7);
     margin: 10px;
     width: 300px;
     height: auto;
@@ -146,7 +148,8 @@ a:hover {
 }
 
 .card:hover {
-    background-color: rgba(104, 100, 98, 0.7)
+    /* background-color: rgba(104, 100, 98, 0.7) */
+    background-color: rgba(132,70,59, .7)
 }
 
 footer {
@@ -154,10 +157,10 @@ footer {
     flex-direction: column;
     width: 100%;
     height: 75px;
+    position: absolute;
     bottom: 0;
     background-color: rgba(0,0,0, .3);
     color: white;
-    text-align: center;
     justify-content: center;
     align-items: center;
     font-size: 25px;
@@ -169,14 +172,18 @@ footer {
     display: flex;
     flex-direction: column;
     width: 500px;
+    height: 300px;
+    margin-top: 1rem;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     align-items: center;
     border: 2px solid grey;
     border-radius: 30px;
     box-shadow: 3px 3px rgba(116, 113, 113, 0.5);
     background-color: rgba(255, 255, 255, .1); 
+    color: rgb(201,184,174);
 
 }
+
 
 .add-event h2 {
     font-size: 25px;
@@ -205,6 +212,37 @@ footer {
 }
 
 .form-container {
+    display: inline-grid;
+    grid-template-columns: repeat(2, auto);
+    align-self: end;
+}
+
+.filter {
     display: flex;
-    justify-content: space-around;
+   justify-content: column;
+   margin-left: 40px;
+}
+
+.filter-buttons {
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 2px solid gray;
+    position: absolute;
+    top: 5;
+   
+}
+
+.filter-buttons > li {
+    display: flex;
+    /* margin-top: 0; */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+
+}
+
+.event-container {
+    margin-top: 50px;
 }

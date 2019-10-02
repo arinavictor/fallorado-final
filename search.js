@@ -30,18 +30,24 @@ function createEventCards(events){
 
 function filterByCategories(categories){
     
-    let categoryList = document.getElementById('search-buttons')
+    let categoryList = document.getElementById('filter-buttons')
     categories.forEach(category => {
         let li = document.createElement('li')
         li.innerText = `${category.name}`
+
+      
         
 
         li.addEventListener("click", function(){
+           
+            while ($container.firstChild) {
+                $container.removeChild($container.firstChild)
+            }
             let p = document.createElement('p')
-            p.innerContent =  category.events.map(event => event.name)
-            console.log(p.innerContent)
+            let events =  category.events.map(event => event)
+            console.log(events)
             li.appendChild(p)
-            createEventCards(p.innerContent)
+            createEventCards(events)
             
         })
 
@@ -55,11 +61,6 @@ fetch("http://localhost:9000/categories")
     .then(createCategoryOptions)
 
 
-    fetch("http://localhost:9000/categories")
+fetch("http://localhost:9000/categories")
     .then(response => response.json())
     .then(filterByCategories)
-
-
-    fetch("http://localhost:9000/events")
-    .then(response => response.json())
-    .then(createEventCards)
