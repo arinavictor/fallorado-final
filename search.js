@@ -27,30 +27,20 @@ function createEventCards(events){
     })
 }
 
-
 function filterByCategories(categories){
-    
     let categoryList = document.getElementById('filter-buttons')
     categories.forEach(category => {
         let li = document.createElement('li')
         li.innerText = `${category.name}`
-
-      
-        
-
         li.addEventListener("click", function(){
-           
             while ($container.firstChild) {
                 $container.removeChild($container.firstChild)
             }
             let p = document.createElement('p')
             let events =  category.events.map(event => event)
-            console.log(events)
             li.appendChild(p)
-            createEventCards(events)
-            
+            createEventCards(events)  
         })
-
         categoryList.appendChild(li)
     })
    

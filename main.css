@@ -45,12 +45,9 @@ table {
 }
 /* ############################################ */
 
-
-
 img {
     width: 200px;
     height: 200px;
-    /* padding: 5px; */
     margin-top: 8px;
 }
 
@@ -122,10 +119,14 @@ a:visited {
 }
 
 a:hover {
-    color: gray;
+    color: rgb(186,102,58);
 }
 
-.event-container {
+.card > a:hover {
+    color: rgb(201,184,174);
+}
+
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -148,7 +149,6 @@ a:hover {
 }
 
 .card:hover {
-    /* background-color: rgba(104, 100, 98, 0.7) */
     background-color: rgba(132,70,59, .7)
 }
 
@@ -158,7 +158,6 @@ footer {
     width: 100%;
     height: 75px;
     position: absolute;
-    bottom: 0;
     background-color: rgba(0,0,0, .3);
     color: white;
     justify-content: center;
@@ -174,21 +173,26 @@ footer {
     width: 500px;
     height: 300px;
     margin-top: 1rem;
+    margin-left: 15px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     align-items: center;
     border: 2px solid grey;
     border-radius: 30px;
     box-shadow: 3px 3px rgba(116, 113, 113, 0.5);
-    background-color: rgba(255, 255, 255, .1); 
-    color: rgb(201,184,174);
+    background-color: rgba(201,184,174, .7); 
+    color: white;
 
+}
+
+.add-event:hover{
+    background-color: rgba(132,70,59, .7);
+    color: rgb(201,184,174);
 }
 
 
 .add-event h2 {
     font-size: 25px;
     align-items: center;
-    /* padding-left: 178px; */
     margin-top: 8px;
 }
 
@@ -196,6 +200,10 @@ footer {
     margin-top: 8px;
     margin-bottom: 5px;
 
+}
+
+.add-event input:hover {
+    cursor: pointer;
 }
 
 .add-event select {
@@ -211,6 +219,10 @@ footer {
     width: 150px;
 }
 
+.submit:hover {
+    cursor: pointer;
+}
+
 .form-container {
     display: inline-grid;
     grid-template-columns: repeat(2, auto);
@@ -220,14 +232,13 @@ footer {
 .filter {
     display: flex;
    justify-content: column;
-   margin-left: 40px;
+   margin-left: 90px;
 }
 
 .filter-buttons {
     padding-top: 1rem;
     display: flex;
     flex-flow: row wrap;
-    border-bottom: 2px solid gray;
     position: absolute;
     top: 5;
    
@@ -235,14 +246,26 @@ footer {
 
 .filter-buttons > li {
     display: flex;
-    /* margin-top: 0; */
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 25px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, .1); 
+}
 
+.filter-buttons >li:hover {
+    background-color: rgba(186,102,58, .5);
+    color: rgb(201,184,174);
+    cursor: pointer;
 }
 
 .event-container {
-    margin-top: 50px;
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 15px;
 }
