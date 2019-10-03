@@ -1,0 +1,32 @@
+#map {
+    margin-top: 50px;
+    display: flex;
+    height: 400px;
+    width: 400px;
+   
+}
+
+#map p {
+    color: black;
+}
+
+#map a {
+    font-size: 20px;
+    color: rgb(132,70,59);
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+

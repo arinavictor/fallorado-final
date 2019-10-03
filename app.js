@@ -5,7 +5,6 @@ const body = document.body
 const $event = document.querySelector('#event-link')
 const $search = document.querySelector('#search-link')
 const $container = document.querySelector('.card-container')
-console.log($container)
 
 function createEventCards(events){
     events.forEach(event => {
@@ -26,5 +25,6 @@ fetch("http://localhost:9000/events")
     .then(createEventCards)
 
 
+    
     
 

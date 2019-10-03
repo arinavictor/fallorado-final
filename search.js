@@ -54,3 +54,42 @@ fetch("http://localhost:9000/categories")
 fetch("http://localhost:9000/categories")
     .then(response => response.json())
     .then(filterByCategories)
+
+
+
+//     function getEventLocation(events) {
+//         const geocoder = new google.maps.Geocoder()
+//         events.forEach(event => {
+//                 codeAddress(event.location, geocoder)
+//                 console.log(event.location)
+            
+//         })
+//     }
+// }
+
+//     function codeAddress(address, geocoder) {
+//         setTimeout(() => {
+
+//             geocoder.geocode( {address:address}, function(results, status) 
+//             {
+//                 if (status == google.maps.GeocoderStatus.OK) 
+//           {
+//               map.setCenter(results[0].geometry.location);//center the map over the result
+//             //place a marker at the location
+//             var marker = new google.maps.Marker(
+//             {
+//                 map: map,
+//                 position: results[0].geometry.location
+//             });
+//         }  else {
+//             // alert('Geocode was not successful for the following reason: ' + status);
+//             console.log('yea yea')
+//         }
+        
+//         // return function(vPostCode) {
+//         //     if (geocoder) setTimeout(geocoder.geocode.bind(geocoder, { 'address': "'" + vPostCode + "'"}, GeocodeCallback), index*delay);
+//         //     index++;
+//         // };
+//     })
+// }, 5000)
+//     }

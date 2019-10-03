@@ -1,29 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='stylesheet' href='main.css'>
-    <title>Event Map</title>
-</head>
-<body>
-    <header>
-        <section class='header-items'>
-            <img src="FALL-o-rado.png" >
-            <div class='nav'>
-                <ul class='nav-bar'>
-                    <li><a id='event-link' href="index.html"> EVENTS </a></li>
-                    <li><a id='map-link' href="map.html'"> MAP</a></li>
-                    <li><a id='search-link' href="search.html"> ADD OR SEARCH </a></li>
-                </ul>
-            </div>
-        </section>
-    </header>
 
-    <div class="map-container">
-        <div class = "map" id="map"></div>
-    </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='main.css'>
+    <link rel='stylesheet' href='map.css'>
+
+  </head>
+  <body>
+    <header>
+            <section class='header-items'>
+                <img src="FALL-o-rado.png" >
+                <div class='nav'>
+                    <ul class='nav-bar'>
+                        <li><a id='event-link' href="index.html"> EVENTS </a></li>
+                        <li><a id='map-link' href='map.html'> MAP</a></li>
+                        <li><a id='search-link' href="search.html"> ADD OR SEARCH </a></li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <div class='map-container'>
+            <div id="map"></div>
+        </div>
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfMRYuWgusrSIJCnLeUsRmow2_6bVudY4&callback=initMap"
+        type="text/javascript"
+    >
+    </script>
     <script src='map.js'></script>
-</body>
+   
+  </body>
 </html>
