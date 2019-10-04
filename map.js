@@ -3,7 +3,7 @@
 // var request = limit(require("request")).to(10).per(1000);
 
 var map;
-let image = 'https://image.flaticon.com/icons/png/128/2077/2077020.png'
+let image = src='tiny_leaf.png'
 function initMap() {
     fetch("http://localhost:9000/events")
     .then(response => response.json())
