@@ -33,8 +33,8 @@ Run lite-server by typing lite-server in your terminal on the front end.
  - Use Google Maps Geocoder Api to process user created events and create markers that will display on the map.
 
  ## Screenshots 
-[screen_shot.png]
-[screen_shot2.png]
+![Map page](screen_shot.png)
+![Add or search](screen_shot2.png)
  
 ## CONTRIBUTORS GUIDE 
 Created by [Arina Victor](https://github.com/arinavictor?tab=repositories) and [Joe Gailey](https://github.com/jgaileyiii?tab=repositories) 
