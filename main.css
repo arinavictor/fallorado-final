@@ -148,7 +148,9 @@ a:hover {
 }
 
 .card:hover {
-    background-color: rgba(132,70,59, .7)
+    background-color: rgba(132,70,59, .7);
+    transform: scale(1.1);
+
 }
 
 footer {
@@ -186,6 +188,7 @@ footer {
 .add-event:hover{
     background-color: rgba(132,70,59, .7);
     color: rgb(201,184,174);
+    transform: scale(1.05);
 }
 
 

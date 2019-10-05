@@ -3,6 +3,9 @@
     display: flex;
     height: 400px;
     width: 400px;
+    border: 8px solid rgba(201,184,174, .7);
+    border-style: ridge;
+    box-shadow: 1px 1px 4px rgb(201,184,174);
    
 }
 

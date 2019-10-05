@@ -1,6 +1,3 @@
-let queryParams = new URLSearchParams(window.location.search)
-let id = queryParams.get('id')
-
 const body = document.body
 const $event = document.querySelector('#event-link')
 const $search = document.querySelector('#search-link')
