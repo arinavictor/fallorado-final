@@ -8,6 +8,8 @@ Find your fall spirit with Fall-o-rado! This application allows users to track a
   
 ## DEMO
 [Fall-o-rado Demo](https://youtu.be/yjdgWm6j870)
+## BACKEND REPO
+[Fall-O-Rado Backend](https://github.com/arinavictor/fallorado-backend)
 ## INSTALL INSTRUCTIONS 
 Fork and clone the repo to install it locally. Bundle install to acquire the appropriate gems. To set up the database, run:
 ```ruby

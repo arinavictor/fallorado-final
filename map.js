@@ -34,7 +34,6 @@ function setEventCoords(event){
         `
       })
       eventInfo.open(map, marker)
-      console.log(eventInfo)
 }
     )}
     }
