@@ -1,8 +1,9 @@
 let map;
 const image = src='tiny_pumpkin.png'
+const BASE_URL = "https://fall-o-rado.herokuapp.com"
 
 function initMap() {
-    fetch('http://localhost:9000/events')
+    fetch(`${BASE_URL}/events`)
     .then(response => response.json())
     .then(makeEventMarker)
 

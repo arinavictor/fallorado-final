@@ -1,5 +1,6 @@
 const body = document.body
 const $container = document.querySelector('.event-container')
+const BASE_URL = "https://fall-o-rado.herokuapp.com"
 
 function createCategoryOptions(categories){
     const categoryDropDown = document.getElementById('category_dropdown')
@@ -43,12 +44,12 @@ function filterByCategories(categories){
    
 }
 
-fetch("http://localhost:9000/categories")
+fetch(`${BASE_URL}/categories`)
     .then(response => response.json())
     .then(createCategoryOptions)
 
 
-fetch("http://localhost:9000/categories")
+fetch(`${BASE_URL}/categories`)
     .then(response => response.json())
     .then(filterByCategories)
 
